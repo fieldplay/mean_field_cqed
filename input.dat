@@ -1,0 +1,45 @@
+
+# PYTHONPATH must include directory above plugin directory.
+#     Define either externally or here, then import plugin.
+sys.path.insert(0, './..')
+import mean_field_cqed
+
+molecule {
+
+H 0.0 0.0 0.0
+H 0.0 0.0 1.0
+
+no_reorient
+nocom
+symmetry c1
+}
+
+memory 10000 mb
+
+set {
+  basis sto-3g 
+  time_step 0.050
+  laser_shape gaussian
+  laser_amp 0.00001
+  laser_freq 0.686155690853 #0.12863 #Small Ag nanoparticle from Rayleigh scattering
+  laser_time 413.414 #141.3414
+  total_time 20000.0
+  n_scf_plasmon_states 20
+  n_plasmon_states     2 
+  linear_response false
+  #plasmon_e [0.12863,0.12863,0.12863]  # Ag
+  plasmon_e [0.686155690853,0.686155690853,0.686155690853]  # Ag
+  plasmon_tdm [192.0,192.0,192.0]
+  plasmon_coordinates [0.0,0.0,50.0] #1500.0*18.89716
+  polarization [0.0,0.0,1.0]
+  plasmon_dr 100e-3/27.21138 
+
+  scf_type cd
+  df_ints_io save
+  e_convergence 1e-12
+  d_convergence 1e-12
+  cholesky_tolerance 1e-12
+  df_basis_cc cholesky
+}
+
+energy('cqed')

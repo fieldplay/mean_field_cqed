@@ -1,0 +1,113 @@
+Scanning dependencies of target mean_field_cqed
+[ 25%] Building CXX object CMakeFiles/mean_field_cqed.dir/tdhf.cc.o
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘void psi::tdhf_cqed::TDHF::OrderCubicBasis()’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1612:9: error: ‘NPOrbE’ was not declared in this scope
+         NPOrbE[idx] = l;
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1622:11: error: ‘NPOrbE’ was not declared in this scope
+       if (NPOrbE[d] > NPOrbE[d+1]) {
+           ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1636:12: error: ‘NPOrbE’ was not declared in this scope
+     Ecur = NPOrbE[c];
+            ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1655:13: error: ‘NPOrb_x’ was not declared in this scope
+             NPOrb_x[c] = nx;
+             ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1656:13: error: ‘NPOrb_y’ was not declared in this scope
+             NPOrb_y[c] = ny;
+             ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1657:13: error: ‘NPOrb_z’ was not declared in this scope
+             NPOrb_z[c] = nz;
+             ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘int psi::tdhf_cqed::TDHF::OrderSphericalBasis()’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1698:9: error: ‘NPOrbE’ was not declared in this scope
+         NPOrbE[idx]= Enl;
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1699:9: error: ‘NPOrb_n’ was not declared in this scope
+         NPOrb_n[idx] = n;
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1700:9: error: ‘NPOrb_l’ was not declared in this scope
+         NPOrb_l[idx] = l;
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1701:9: error: ‘NPOrb_m’ was not declared in this scope
+         NPOrb_m[idx] = m;
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::NP_h(int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1722:11: error: ‘pi’ was not declared in this scope
+     fac = pi*pi/(2.*L*L);
+           ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1728:11: error: ‘pi’ was not declared in this scope
+     fac = pi*pi/(8.*R*R);
+           ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1732:14: error: ‘pi’ was not declared in this scope
+   else fac = pi*pi/(2.*L*L);
+              ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1734:14: error: ‘NPOrbE’ was not declared in this scope
+   return fac*NPOrbE[p];
+              ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::prefac(int, int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1783:14: error: ‘pi’ was not declared in this scope
+   denom1 = 4*pi;
+              ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::Bessel(double, int, int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1882:15: error: ‘pi’ was not declared in this scope
+     cterm3 = (pi/2)*(cterm1-cterm2);
+               ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::TDP_Z_Spherical(int, int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1936:8: error: ‘NPOrb_n’ was not declared in this scope
+   ni = NPOrb_n[p-1];
+        ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1937:8: error: ‘NPOrb_l’ was not declared in this scope
+   li = NPOrb_l[p-1];
+        ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1938:8: error: ‘NPOrb_m’ was not declared in this scope
+   mi = NPOrb_m[p-1];
+        ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:1948:9: error: ‘pi’ was not declared in this scope
+   dth = pi/numpts;
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::TDP_Z_Cubic(int, int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2001:9: error: ‘NPOrb_x’ was not declared in this scope
+   nxi = NPOrb_x[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2002:9: error: ‘NPOrb_y’ was not declared in this scope
+   nyi = NPOrb_y[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2003:9: error: ‘NPOrb_z’ was not declared in this scope
+   nzi = NPOrb_z[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2014:25: error: ‘pi’ was not declared in this scope
+       term1 = pow(L,2)*(pi*(nzi-nzf)*sin(pi*(nzi-nzf))+cos(pi*(nzi-nzf))-1)/(pi*pi*pow((nzi-nzf),2));
+                         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::TDP_Y_Cubic(int, int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2038:9: error: ‘NPOrb_x’ was not declared in this scope
+   nxi = NPOrb_x[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2039:9: error: ‘NPOrb_y’ was not declared in this scope
+   nyi = NPOrb_y[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2040:9: error: ‘NPOrb_z’ was not declared in this scope
+   nzi = NPOrb_z[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2052:25: error: ‘pi’ was not declared in this scope
+       term1 = pow(L,2)*(pi*(nyi-nyf)*sin(pi*(nyi-nyf))+cos(pi*(nyi-nyf))-1)/(pi*pi*pow((nyi-nyf),2));
+                         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc: In member function ‘double psi::tdhf_cqed::TDHF::TDP_X_Cubic(int, int)’:
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2079:9: error: ‘NPOrb_x’ was not declared in this scope
+   nxi = NPOrb_x[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2080:9: error: ‘NPOrb_y’ was not declared in this scope
+   nyi = NPOrb_y[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2081:9: error: ‘NPOrb_z’ was not declared in this scope
+   nzi = NPOrb_z[p-1];
+         ^
+/home/jay/deprince-group/plugins/mean_field_cqed/tdhf.cc:2093:25: error: ‘pi’ was not declared in this scope
+       term1 = pow(L,2)*(pi*(nxi-nxf)*sin(pi*(nxi-nxf))+cos(pi*(nxi-nxf))-1)/(pi*pi*pow((nxi-nxf),2));
+                         ^
+CMakeFiles/mean_field_cqed.dir/build.make:86: recipe for target 'CMakeFiles/mean_field_cqed.dir/tdhf.cc.o' failed
+make[2]: *** [CMakeFiles/mean_field_cqed.dir/tdhf.cc.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/mean_field_cqed.dir/all' failed
+make[1]: *** [CMakeFiles/mean_field_cqed.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2

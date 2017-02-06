@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++  -fPIC   -shared -Wl,-soname,mean_field_cqed.so -o mean_field_cqed.so CMakeFiles/mean_field_cqed.dir/frozen_natural_orbitals.cc.o CMakeFiles/mean_field_cqed.dir/tdhf.cc.o CMakeFiles/mean_field_cqed.dir/tdhf_cqed.cc.o /path/to/install-psi4/lib/psi4/core.so -Wl,-rpath,/path/to/install-psi4/lib/psi4 
