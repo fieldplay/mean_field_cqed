@@ -875,6 +875,15 @@ void TDHF::PlasmonContribution(double * tempr,
 
 }
 
+// From DePrince Paper:
+// L(b_A^{\dagger} b_B) = − \gamma/2 (bˆ† b bˆ†_A b_B + bˆ†_A b_B bˆ† b − 2 b bˆ†_A b_B bˆ†)
+// Density Matrix for NP is Defined as D_A^B = <Psi|b_A^{\dagger} b_B|Psi> 
+
+// From Mazziotti Paper:
+// L(D) = \gamma sum_k 2 ( <k|D|k>|g><g| - |k><k| D - D|k><k| )
+// where |g> is the ground state basis ket
+// and   |k> span the excited-state basis kets
+
 void TDHF::BuildLindblad(double * tempr,
                          double * tempi,
                          double * kre,
